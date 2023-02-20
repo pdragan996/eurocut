@@ -1,0 +1,42 @@
+@import "src/variables";
+
+.header {
+  display: flex;
+  font-family: $family-bernard;
+  font-size: $font-size-l;
+  font-variant: all-petite-caps;
+  height: 88px;
+
+  .logo {
+    width: 10%;
+    height: 20vh;
+    background-color: red;
+    margin-left: 2vw;
+    z-index: 5;
+  }
+
+  .navigation {
+    width: 65%;
+    margin-left: 5%;
+    align-self: center;
+  }
+
+  .header-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+  }
+
+  .social {
+    width: calc(15% - 32px);
+    margin-left: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &--icon {
+      margin-left: 16px;
+    }
+  }
+}

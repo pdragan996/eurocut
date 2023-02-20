@@ -1,0 +1,15 @@
+@import "variables.scss";
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+a:hover {
+  font-size: 1.2em;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+}
