@@ -26,10 +26,13 @@
 
   .main {
     background-color: transparent;
-    width: 100%;
+    width: calc(100% - 2*48px);
     height: 100%;
     position: relative;
+    margin-left: 48px;
     z-index: 3;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
