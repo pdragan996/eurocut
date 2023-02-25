@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import './Dashboard.scss';
 import { BsFacebook, BsInstagram } from 'react-icons/bs'
+import logo from '../assets/logo.png'
 
 const Dashboard = () => {
   
@@ -9,7 +10,7 @@ const Dashboard = () => {
     <React.Fragment>
       <header className="header">
         <div className="logo">
-        
+          <img src={logo} alt="Logo"/>
         </div>
         <nav className="navigation">
           <ul className="header-list">

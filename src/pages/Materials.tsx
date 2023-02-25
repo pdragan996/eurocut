@@ -16,9 +16,9 @@ const Materials = () => {
       <div className="materials__diagonal materials__bottom-right"/>
       <div className="main">
         <MaterialBlock image={idea} alt="Idea" description={descriptionIdea} />
-        <MaterialBlock image={delivery} alt="Idea" description={descriptionIdea} />
-        <MaterialBlock image={design} alt="Idea" description={descriptionIdea} />
-        <MaterialBlock image={production} alt="Idea" description={descriptionIdea} />
+        <MaterialBlock image={delivery} alt="Delivery" description={descriptionIdea} />
+        <MaterialBlock image={design} alt="Design" description={descriptionIdea} />
+        <MaterialBlock image={production} alt="Production" description={descriptionIdea} />
       </div>
     </div>
   )
