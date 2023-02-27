@@ -18,13 +18,13 @@ const Dashboard = () => {
               <li>Eurocut</li>
             </Link>
             <Link to={'/about-us'}>
-              <li>About Us</li>
+              <li>Proizvodi</li>
             </Link>
             <Link to={'/materials'}>
-              <li>Materials</li>
+              <li>Materijali</li>
             </Link>
             <Link to={'/contact'}>
-              <li>Contact</li>
+              <li>Kontakt</li>
             </Link>
           </ul>
         </nav>

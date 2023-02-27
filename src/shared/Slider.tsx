@@ -19,9 +19,7 @@ const Slider = () => {
     currentImgIndex === 0 ? setCurrentImgIndex(images.length - 1) : setCurrentImgIndex(currentImgIndex - 1);
   }
 
-  // setTimeout(() => {
-  //  moveNext()
-  // }, 10000)
+  // setTimeout(moveNext, 10000);
   
   return (
     <div className="home-image" style={{backgroundImage: `url(${images[currentImgIndex]})`}}>
@@ -42,7 +40,7 @@ const Slider = () => {
           Euro cut
         </div>
         <div className="home-image__description">
-          custom furniture
+          rezanje i ugradnja namještaja po mjeri
         </div>
       </div>
     </div>

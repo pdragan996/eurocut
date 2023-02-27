@@ -15,7 +15,7 @@ const MaterialBlock = (props: MaterialBlockProps) => {
         <img src={props.image} alt={props.alt}/>
       </div>
       <div className="material-block__description">
-      
+        {props.description}
       </div>
     </div>
   )
