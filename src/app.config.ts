@@ -15,3 +15,9 @@ a mi garantujemo trajnost.
 Naš moto: Zadovoljan klijent je nas klijent!
 `
 export const EURO_CUT_MOTO = 'Pazite sta zelite, mozda Vam se i ostvari.'
+
+export const HOME_MESSAGES = {
+  A: 'Rezanje svih vrsta materijala',
+  B: 'Izrada i dostava namjestaja',
+  C: 'Pomoc pri izboru pravog materijala'
+}

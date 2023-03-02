@@ -6,6 +6,7 @@ import img3 from '../assets/img3.jpg';
 import img4 from '../assets/img4.jpg';
 import img5 from '../assets/img5.jpg';
 import img6 from '../assets/img6.jpg';
+import { HOME_MESSAGES } from '../app.config';
 
 const Slider = () => {
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
@@ -18,20 +19,30 @@ const Slider = () => {
   const movePrev = () => {
     currentImgIndex === 0 ? setCurrentImgIndex(images.length - 1) : setCurrentImgIndex(currentImgIndex - 1);
   }
-
-  // setTimeout(moveNext, 10000);
+  
+  const getMessage = (): string => {
+    switch (currentImgIndex) {
+      case 1:
+        return HOME_MESSAGES.B
+      case 2:
+        return HOME_MESSAGES.C
+      default:
+        return HOME_MESSAGES.A
+    }
+  }
   
   return (
     <div className="home-image" style={{backgroundImage: `url(${images[currentImgIndex]})`}}>
+      <div className="home-image__message">{getMessage()}</div>
       <div className="home-image__icon_group">
           <AiOutlineLeft
             size={70}
             onClick={movePrev}
-            strokeWidth={90}
+            strokeWidth={70}
             className="home-image__icon"/>
           <AiOutlineRight
             size={70}
-            strokeWidth={90}
+            strokeWidth={70}
             onClick={moveNext}
             className="home-image__icon"/>
       </div>
