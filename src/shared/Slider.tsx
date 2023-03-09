@@ -34,7 +34,7 @@ const Slider = () => {
   return (
     <div className="home-image" style={{backgroundImage: `url(${images[currentImgIndex]})`}}>
       <div className="home-image__message">{getMessage()}</div>
-      <div className="home-image__icon_group">
+      <div className="home-image__icon-group">
           <AiOutlineLeft
             size={70}
             onClick={movePrev}

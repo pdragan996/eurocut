@@ -34,12 +34,21 @@
     font-size: $font-size-l;
   }
 
-  &__icon_group {
+  &__icon-group {
     font-weight: 700;
+    z-index: 5;
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-self: center;
+  }
+
+  @media only screen and (max-width: $small-sc-w) {
+    &__icon-group {
+      align-self: unset;
+      position: absolute;
+      top: calc(10% + 80px);
+    }
   }
 
   &__icon {
