@@ -3,6 +3,7 @@ import { Link, Outlet } from 'react-router-dom';
 import './Dashboard.scss';
 import { BsFacebook, BsInstagram } from 'react-icons/bs'
 import logo from '../assets/logo.png'
+import MobileNavigation from '../components/MobileNavigation';
 
 const Dashboard = () => {
   
@@ -13,15 +14,13 @@ const Dashboard = () => {
           <img src={logo} alt="Logo"/>
         </div>
         <nav className="navigation">
+          <MobileNavigation/>
           <ul className="header-list">
             <Link to={'/'}>
               <li>Eurocut</li>
             </Link>
-            <Link to={'/about-us'}>
+            <Link to={'/products'}>
               <li>Proizvodi</li>
-            </Link>
-            <Link to={'/materials'}>
-              <li>Materijali</li>
             </Link>
             <Link to={'/contact'}>
               <li>Kontakt</li>

@@ -9,7 +9,7 @@
 
   .logo {
     width: 150px;
-    height: 128px;
+    height: 100px;
     margin-left: 2vw;
     z-index: 5;
 
@@ -41,6 +41,17 @@
 
     &--icon {
       margin-left: 16px;
+    }
+  }
+
+  @media only screen and (max-width: $xs-screen) {
+    .navigation {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+    }
+    .header-list {
+      display: none;
     }
   }
 }

@@ -13,6 +13,7 @@ const Materials = () => {
     <div className="materials">
       <div className="materials__diagonal materials__top-left"/>
       <div className="materials__diagonal materials__bottom-right"/>
+      <div className="aaa" ></div>
       <div className="main">
         <MaterialBlock image={idea} alt="Idea" description={BLOCK_DESCRIPTIONS_SR.IDEA} />
         <MaterialBlock image={design} alt="Design" description={BLOCK_DESCRIPTIONS_SR.DESIGN} />

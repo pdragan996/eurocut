@@ -1,0 +1,28 @@
+@import "src/variables";
+
+.mobile-nav {
+  margin-left: 2%;
+  //position: relative;
+}
+
+.mobile-menu {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background-color: $color-light-grey;
+  z-index: 4;
+  top: 100px;
+  left: 8px;
+
+  &__list {
+    li {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (min-width: $xs-screen) {
+  .mobile-nav {
+    display: none;
+  }
+}
