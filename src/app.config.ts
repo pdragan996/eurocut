@@ -7,23 +7,26 @@ export const BLOCK_DESCRIPTIONS_SR = {
 }
 
 export const EURO_CUT_DESCRIPTION = `
-EUROCUT D.O.O. se bavi projektovanjem,
-dizajnom i izradom namjestaja po mjeri,
-kuhinja, opremanjem poslovnih prostora,
-hotelskih soba,porodičnih kuća.
-Namještaj se izradjuje od vrhunskih materijala,
-a mi garantujemo trajnost.
-Naš moto: Zadovoljan klijent je nas klijent!
+EUROCUT D.O.O.
+Primarna djelatnost se ogleda u pružanju usluga kantanja, rezanja i prodaje okova, lesomal ploča,
+te radnih ploča, a sve to u saradnji sa majstorima.
+Sekundarne djelatnosti obuhvataju: projektovanje, dizajn i izrada namještaja po mjeri - kuhinja,
+hotelskih soba, opremanje poslovnih prostora i porodičnih kuća.
+Namještaj se izrađuje od vrhunskih materijala, a mi garantujemo trajnost.
 `
 export const EURO_CUT_MOTO = 'Pazite šta želite, možda Vam se i ostvari.'
 
 export const HOME_MESSAGES = {
   A: 'Rezanje svih vrsta materijala',
   B: 'Izrada i dostava namjestaja',
-  C: 'Pomoc pri izboru pravog materijala'
+  C: 'Pomoc pri izboru pravog materijala',
+  D: 'Konsultacije sa arhitektom',
+  E: 'Izlazak na teren u svrhu mjerenja'
 }
 
 export const COORDINATES = {
-  lat: 44.772350,
-  long: 17.191681
+  lat: 44.784303,
+  long: 17.208235
 }
+
+export const ADDRESS = 'Pilanska bb, Banja Luka'

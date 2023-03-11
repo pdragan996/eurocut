@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact.scss'
-import { COORDINATES, EURO_CUT_DESCRIPTION, EURO_CUT_MOTO } from '../app.config';
+import { ADDRESS, COORDINATES, EURO_CUT_DESCRIPTION, EURO_CUT_MOTO } from '../app.config';
 import { GoMail } from 'react-icons/go';
 import { BsTelephoneOutbound } from 'react-icons/bs';
 import { TiLocation } from 'react-icons/ti';
@@ -44,7 +44,7 @@ const Contact = () => {
             <strong>Otvori google maps</strong>
           </div>
           <span className="contact__icon"><TiLocation/></span>
-          <span>location</span>
+          <span>{ADDRESS}</span>
         </div>
         
         

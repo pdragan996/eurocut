@@ -26,6 +26,10 @@ const Slider = () => {
         return HOME_MESSAGES.B
       case 2:
         return HOME_MESSAGES.C
+      case 3:
+        return HOME_MESSAGES.E
+      case 4:
+        return HOME_MESSAGES.D
       default:
         return HOME_MESSAGES.A
     }
