@@ -1,12 +1,17 @@
 import React from 'react';
 import './Contact.scss'
-import { EURO_CUT_DESCRIPTION, EURO_CUT_MOTO } from '../app.config';
+import { COORDINATES, EURO_CUT_DESCRIPTION, EURO_CUT_MOTO } from '../app.config';
 import { GoMail } from 'react-icons/go';
 import { BsTelephoneOutbound } from 'react-icons/bs';
 import { TiLocation } from 'react-icons/ti';
 import { GiRotaryPhone } from 'react-icons/gi';
 
 const Contact = () => {
+  const {lat, long} = COORDINATES;
+
+  const goToMaps = () => {
+    window.open("https://maps.google.com?q="+lat+","+long, '_blank');
+  }
   
   return (
     <div className="contact">
@@ -31,7 +36,13 @@ const Contact = () => {
           <span className="contact__icon"><GiRotaryPhone/></span>
           <span>+387 51/951-388</span>
         </div>
-        <div className="contact__icons-container">
+        <div
+          className="contact__icons-container
+            contact__icons-container--clickable"
+          onClick={goToMaps}>
+          <div className="tooltip">
+            <strong>Otvori google maps</strong>
+          </div>
           <span className="contact__icon"><TiLocation/></span>
           <span>location</span>
         </div>

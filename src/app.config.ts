@@ -22,3 +22,8 @@ export const HOME_MESSAGES = {
   B: 'Izrada i dostava namjestaja',
   C: 'Pomoc pri izboru pravog materijala'
 }
+
+export const COORDINATES = {
+  lat: 44.772350,
+  long: 17.191681
+}
