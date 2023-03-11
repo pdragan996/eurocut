@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact.scss'
-import { ADDRESS, COORDINATES, EURO_CUT_DESCRIPTION, EURO_CUT_MOTO } from '../app.config';
+import { ADDRESS, CONTACT_DESCRIPTION, COORDINATES, EURO_CUT_MOTO } from '../app.config';
 import { GoMail } from 'react-icons/go';
 import { BsTelephoneOutbound } from 'react-icons/bs';
 import { TiLocation } from 'react-icons/ti';
@@ -23,7 +23,10 @@ const Contact = () => {
         </div>
       </div>
       <div className="contact__text">
-        {EURO_CUT_DESCRIPTION}
+        <div className="contact__title">{CONTACT_DESCRIPTION.HEADER}</div>
+        <div className="contact__description">{CONTACT_DESCRIPTION.FIRST}</div>
+        <div className="contact__description">{CONTACT_DESCRIPTION.SECOND}</div>
+        <div className="contact__description">{CONTACT_DESCRIPTION.THIRD}</div>
         <div className="contact__icons-container">
           <span className="contact__icon"><GoMail/></span>
           <span>eurocut.info@gmail.com</span>

@@ -6,14 +6,13 @@ export const BLOCK_DESCRIPTIONS_SR = {
   DELIVERY: 'Nakon izrade naš tim će u što kraćem roku izvršiti isporuku'
 }
 
-export const EURO_CUT_DESCRIPTION = `
-EUROCUT D.O.O.
-Primarna djelatnost se ogleda u pružanju usluga kantanja, rezanja i prodaje okova, lesomal ploča,
-te radnih ploča, a sve to u saradnji sa majstorima.
-Sekundarne djelatnosti obuhvataju: projektovanje, dizajn i izrada namještaja po mjeri - kuhinja,
-hotelskih soba, opremanje poslovnih prostora i porodičnih kuća.
-Namještaj se izrađuje od vrhunskih materijala, a mi garantujemo trajnost.
-`
+export const CONTACT_DESCRIPTION = {
+  HEADER: 'EUROCUT D.O.O.',
+  FIRST: 'Primarna djelatnost se ogleda u pružanju usluga kantanja, rezanja i prodaje okova, lesomal ploča, te radnih ploča, a sve to u saradnji sa majstorima.',
+  SECOND: 'Sekundarne djelatnosti obuhvataju: projektovanje, dizajn i izrada namještaja po mjeri - kuhinja, hotelskih soba, opremanje poslovnih prostora i porodičnih kuća.',
+  THIRD: 'Namještaj se izrađuje od vrhunskih materijala, a mi garantujemo trajnost.'
+}
+
 export const EURO_CUT_MOTO = 'Pazite šta želite, možda Vam se i ostvari.'
 
 export const HOME_MESSAGES = {

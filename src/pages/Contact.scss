@@ -60,6 +60,15 @@
     }
   }
 
+  &__title {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__description {
+    margin-top: 8px;
+  }
+
   &__icons-container {
     margin-top: 32px;
     display: flex;
