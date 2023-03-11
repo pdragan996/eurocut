@@ -36,13 +36,13 @@ const Slider = () => {
       <div className="home-image__message">{getMessage()}</div>
       <div className="home-image__icon-group">
           <AiOutlineLeft
-            size={70}
+            size={50}
             onClick={movePrev}
-            strokeWidth={70}
+            strokeWidth={40}
             className="home-image__icon"/>
           <AiOutlineRight
-            size={70}
-            strokeWidth={70}
+            size={50}
+            strokeWidth={40}
             onClick={moveNext}
             className="home-image__icon"/>
       </div>

@@ -4,7 +4,7 @@ import './Materials.scss';
 const Materials = () => {
   
   return (
-    <div className="about-us">
+    <div className="materials">
     
     </div>
   )

@@ -2,7 +2,6 @@
 
 .mobile-nav {
   margin-left: 2%;
-  //position: relative;
 }
 
 .mobile-menu {
@@ -21,7 +20,7 @@
   }
 }
 
-@media only screen and (min-width: $xs-screen) {
+@media only screen and (min-width: $medium-sc-w) {
   .mobile-nav {
     display: none;
   }

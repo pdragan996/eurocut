@@ -5,12 +5,17 @@
   min-height: 85vh;
   display: flex;
 
-  &__image {
+  &__left {
     width: 55%;
     min-height: 100%;
-    background-size: cover !important;
-    background: no-repeat;
     position: relative;
+  }
+
+  &__image {
+    min-height: 100%;
+    position: relative;
+    background-size: cover !important;
+    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url("../assets/img2.jpg");
   }
 
   &__image-text {
@@ -36,7 +41,7 @@
     min-height: calc(100% - 16px);
     height: auto;
     font-size: 24px;
-    padding: 16px 0 0 16px;
+    padding: 16px;
     position: relative;
 
     &-text {
@@ -67,15 +72,8 @@
     font-size: 32px;
   }
 
-  @media only screen and (max-width: $medium-sc-w ) {
-    &__image {
-      display: block;
-      background: no-repeat center center fixed;
-    }
-  }
-
   @media only screen and (max-width: $small-sc-w) {
-    &__image {
+    &__left {
       display: none;
     }
 
