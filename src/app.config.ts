@@ -1,8 +1,9 @@
 export const BLOCK_DESCRIPTIONS_SR = {
-  IDEA: 'Konsultacije sa nasim timom kako bi pronasli najbolje rjesenje za predvidjeni prostor',
-  DESIGN: 'Izrada dizajna prema prethodno usvojenom rjesenju, od strane arhitekte sa kompletnim nacrtom',
-  PRODUCTION: 'Koristeci vrhunske materijale i najsavremeniju tehnologiju, vase zelje postaju realnost',
-  DELIVERY: 'Nakon izrade nas tim ce u sto kracem roku izvrsiti isporuku'
+  FIRST: 'U saradnji sa našim majstorima vršimo usluge: rezanja, kantanja, izrade materijala, a sve u cilju kreiranja Vašeg životnog prostora',
+  IDEA: 'Konsultacije sa našim timom kako bi pronašli najbolje rješenje za predviđeni prostor',
+  DESIGN: 'Izrada dizajna prema prethodno usvojenom rješenju, od strane arhitekte sa kompletnim nacrtom',
+  PRODUCTION: 'Koristeći vrhunske materijale i najsavremeniju tehnologiju, vaše želje postaju realnost',
+  DELIVERY: 'Nakon izrade naš tim će u što kraćem roku izvršiti isporuku'
 }
 
 export const EURO_CUT_DESCRIPTION = `

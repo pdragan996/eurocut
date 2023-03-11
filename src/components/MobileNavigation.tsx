@@ -21,10 +21,13 @@ const MobileNavigation = () => {
         <div className="mobile-menu">
           <ul className="mobile-menu__list">
             <Link to={'/'} onClick={closeMenu}>
-              <li>Eurocut</li>
+              <li>Euro Cut</li>
             </Link>
             <Link to={'/products'} onClick={closeMenu}>
               <li>Proizvodi</li>
+            </Link>
+            <Link to={'/materials'} onClick={closeMenu}>
+              <li>Materijali</li>
             </Link>
             <Link to={'/contact'} onClick={closeMenu}>
               <li>Kontakt</li>

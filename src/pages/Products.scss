@@ -1,0 +1,64 @@
+@import "src/variables";
+
+$mh-85: 85vh;
+
+.products {
+  width: 100%;
+  position: relative;
+  min-height: $mh-85;
+  height: auto;
+
+  &__diagonal {
+    position: absolute;
+    width: 95%;
+    height: 100%;
+  }
+
+  &__top-left {
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0%, 5% 100%, 0% 100%);
+  }
+
+  &__bottom-right {
+    background-color: $color-gold;
+    top: 0;
+    right: 0;
+    clip-path: polygon(95% 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  &__first-block {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: $small-sc-w) {
+    .first-block {
+      .material-block {
+        &__description {
+          height: 210px;
+        }
+      }
+    }
+  }
+
+
+  .main {
+    background-color: transparent;
+    width: calc(100% - 2 * 48px);
+    height: calc(100% - 48px);
+    min-height: $mh-85;
+    position: relative;
+    margin: 48px 0 0 48px;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media only screen and (max-width: $small-sc-w) {
+    .main {
+      justify-content: center;
+    }
+  }
+}

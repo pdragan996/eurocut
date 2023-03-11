@@ -17,10 +17,13 @@ const Dashboard = () => {
           <MobileNavigation/>
           <ul className="header-list">
             <Link to={'/'}>
-              <li>Eurocut</li>
+              <li>Euro Cut</li>
             </Link>
             <Link to={'/products'}>
               <li>Proizvodi</li>
+            </Link>
+            <Link to={'/materials'}>
+              <li>Materijali</li>
             </Link>
             <Link to={'/contact'}>
               <li>Kontakt</li>
