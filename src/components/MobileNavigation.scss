@@ -13,6 +13,31 @@
   top: 100px;
   left: 8px;
 
+  &__materials {
+    cursor: default;
+    position: relative;
+
+    &:hover {
+      .mobile-menu__materials-block {
+        display: flex;
+      }
+    }
+  }
+
+  &__materials-block {
+    height: 210px;
+    width: 150px;
+    font-size: 22px;
+    background-color: lightgrey;
+    position: absolute;
+    top: 48px;
+    z-index: 4;
+    display: none;
+    flex-direction: column;
+    padding: 16px;
+    gap: 8px;
+  }
+
   &__list {
     li {
       display: block;

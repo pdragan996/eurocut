@@ -22,9 +22,18 @@ const Dashboard = () => {
             <Link to={'/products'}>
               <li>Proizvodi</li>
             </Link>
-            <Link to={'/materials'}>
-              <li>Materijali</li>
-            </Link>
+            <li className="header-list__materials">
+              Materijali
+              <div className="header-list__materials-block">
+                <span>Iverica</span>
+                <span>MDF</span>
+                <span>HDF</span>
+                <span>Iverica visoki sjaj</span>
+                <span>Kompakt ploca</span>
+                <span>Lesomal</span>
+                <span>Okovi</span>
+              </div>
+            </li>
             <Link to={'/contact'}>
               <li>Kontakt</li>
             </Link>

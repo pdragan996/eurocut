@@ -32,6 +32,31 @@
     width: 100%;
     padding: 0;
     margin: 16px 0;
+
+    &__materials {
+      cursor: default;
+      position: relative;
+
+      &:hover {
+        .header-list__materials-block {
+          display: flex;
+        }
+      }
+    }
+
+    &__materials-block {
+      height: 210px;
+      width: 150px;
+      font-size: 22px;
+      background-color: lightgrey;
+      position: absolute;
+      top: 48px;
+      z-index: 4;
+      display: none;
+      flex-direction: column;
+      padding: 16px;
+      gap: 8px;
+    }
   }
 
   .social {

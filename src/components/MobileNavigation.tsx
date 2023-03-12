@@ -26,9 +26,18 @@ const MobileNavigation = () => {
             <Link to={'/products'} onClick={closeMenu}>
               <li>Proizvodi</li>
             </Link>
-            <Link to={'/materials'} onClick={closeMenu}>
-              <li>Materijali</li>
-            </Link>
+              <li className="mobile-menu__materials">
+                Materijali
+                <div className="mobile-menu__materials-block">
+                  <span>Iverica</span>
+                  <span>MDF</span>
+                  <span>HDF</span>
+                  <span>Iverica visoki sjaj</span>
+                  <span>Kompakt ploca</span>
+                  <span>Lesomal</span>
+                  <span>Okovi</span>
+                </div>
+              </li>
             <Link to={'/contact'} onClick={closeMenu}>
               <li>Kontakt</li>
             </Link>
