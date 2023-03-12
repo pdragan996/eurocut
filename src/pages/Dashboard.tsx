@@ -31,13 +31,13 @@ const Dashboard = () => {
           </ul>
         </nav>
         <div className="social">
-          <a href={'https://sr-rs.facebook.com/'}
+          <a href={'https://www.facebook.com/profile.php?id=100090754463246'}
              target="_blank"
              rel="noreferrer"
              className="social--icon">
             <BsFacebook/>
           </a>
-          <a href={'https://www.instagram.com/'}
+          <a href={'https://www.instagram.com/eurocut.d.o.o/'}
              target="_blank"
              rel="noreferrer"
              className="social--icon">
