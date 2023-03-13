@@ -4,8 +4,20 @@ import './Dashboard.scss';
 import { BsFacebook, BsInstagram } from 'react-icons/bs'
 import logo from '../assets/logo.png'
 import MobileNavigation from '../components/MobileNavigation';
+import { useTranslation } from 'react-i18next';
+
+const lngs = [
+  { code: "en" },
+  { code: "sr" },
+  { code: "de" },
+];
 
 const Dashboard = () => {
+  const { t, i18n } = useTranslation();
+  
+  const handleTrans = (code: string) => {
+    i18n.changeLanguage(code);
+  }
   
   return (
     <React.Fragment>
@@ -17,24 +29,24 @@ const Dashboard = () => {
           <MobileNavigation/>
           <ul className="header-list">
             <Link to={'/'}>
-              <li>Euro Cut</li>
+              <li>{t('welcome')}</li>
             </Link>
             <Link to={'/products'}>
-              <li>Proizvodi</li>
+              <li>{t('products')}</li>
             </Link>
             <li className="header-list__materials">
-              Materijali
+              {t('materials')}
               <div className="header-list__materials-block">
-                <span>Iverica</span>
-                <span>MDF</span>
-                <span>HDF</span>
-                <span>Iverica visoki sjaj</span>
-                <span>Kompakt ploca</span>
-                <span>Okovi</span>
+                <span>{t('plywood')}</span>
+                <span>{t('mdf')}</span>
+                <span>{t('hdf')}</span>
+                <span>{t('plywood2')}</span>
+                <span>{t('cp')}</span>
+                <span>{t('shackles')}</span>
               </div>
             </li>
             <Link to={'/contact'}>
-              <li>Kontakt</li>
+              <li>{t('contact')}</li>
             </Link>
           </ul>
         </nav>
@@ -51,6 +63,15 @@ const Dashboard = () => {
              className="social--icon">
             <BsInstagram/>
           </a>
+        </div>
+        <div className="languages">
+          {/*<span>SR</span>*/}
+          {/*<span>EN</span>*/}
+          {/*<span>DE</span>*/}
+          {lngs.map(lng => {
+            const code = lng.code;
+            return <span onClick={ ()=> handleTrans(code) }>{code} </span>
+          })}
         </div>
       </header>
       <Outlet/>

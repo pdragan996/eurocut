@@ -1,5 +1,8 @@
 @import "src/variables";
 
+$navigation-width: 60%;
+$social-width: calc(15% - 32px);
+
 .header {
   display: flex;
   font-family: $family-bernard;
@@ -20,7 +23,7 @@
   }
 
   .navigation {
-    width: 65%;
+    width: $navigation-width;
     margin-left: 2%;
     margin-top: -4px;
     align-self: center;
@@ -60,20 +63,32 @@
   }
 
   .social {
-    width: calc(15% - 32px);
+    width: $social-width;
     margin-left: 32px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 
     &--icon {
       margin-left: 16px;
     }
   }
 
+  .languages {
+    width: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+
   @media only screen and (max-width: $medium-sc-w) {
+    justify-content: space-between;
+
     .navigation {
-      width: 30%;
+      width: 15%;
       display: flex;
       justify-content: center;
     }
