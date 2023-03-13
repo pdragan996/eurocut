@@ -6,9 +6,10 @@ import img3 from '../assets/img3.jpg';
 import img4 from '../assets/img4.jpg';
 import img5 from '../assets/img5.jpg';
 import img6 from '../assets/img6.jpg';
-import { HOME_MESSAGES } from '../app.config';
+import { useTranslation } from 'react-i18next';
 
 const Slider = () => {
+  const { t } = useTranslation();
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
   const images = [img1, img3, img4, img5, img6];
   
@@ -23,15 +24,16 @@ const Slider = () => {
   const getMessage = (): string => {
     switch (currentImgIndex) {
       case 1:
-        return HOME_MESSAGES.B
+        // return HOME_MESSAGES.B
+        return t('home_messages.B')
       case 2:
-        return HOME_MESSAGES.C
+        return t('home_messages.C')
       case 3:
-        return HOME_MESSAGES.E
+        return t('home_messages.E')
       case 4:
-        return HOME_MESSAGES.D
+        return t('home_messages.D')
       default:
-        return HOME_MESSAGES.A
+        return t('home_messages.A')
     }
   }
   
@@ -55,7 +57,7 @@ const Slider = () => {
           Euro cut
         </div>
         <div className="home-image__description">
-          rezanje i ugradnja namještaja po mjeri
+          {t('custom_made_furniture')}
         </div>
       </div>
     </div>
