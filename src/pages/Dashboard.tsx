@@ -30,7 +30,6 @@ const Dashboard = () => {
                 <span>HDF</span>
                 <span>Iverica visoki sjaj</span>
                 <span>Kompakt ploca</span>
-                <span>Lesomal</span>
                 <span>Okovi</span>
               </div>
             </li>
